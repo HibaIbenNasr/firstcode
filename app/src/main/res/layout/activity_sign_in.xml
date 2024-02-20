@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40sp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="40sp"
+          android:text="Welcome! \nPlease Sign In here"
+          android:textColor="@color/colorApp"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <ImageView
+          android:layout_width="120dp"
+          android:layout_height="100dp"
+          android:layout_alignParentRight="true"
+          android:layout_margin="15sp"
+          android:src="@drawable/img" />
+
+
+   </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10sp"
+       android:background="@drawable/shape"
+       android:orientation="vertical"
+       android:padding="30sp">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Email"
+          android:textColor="@color/colorApp"
+          android:textStyle="bold"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10sp"
+          android:hint="youremail@exmple.com"
+          android:inputType="textEmailAddress"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:drawableRight="@drawable/email" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:text="Password"
+   android:textColor="@color/colorApp"
+    android:textStyle="bold"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10sp"
+          android:hint="********"
+          android:inputType="text"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:drawableRight="@drawable/key"/>
+
+
+
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Remember me"
+          android:textColor="@color/colorApp"
+          android:textStyle="bold"/>
+
+
+      <TextView
+          android:id="@+id/goToForgetPassWord"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:text="Forget your password?"
+          android:textColor="@color/colorApp"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="15sp"
+          android:backgroundTint="@color/colorApp"
+          android:text="Sign In"
+          app:cornerRadius="50sp" />
+
+      <TextView
+          android:id="@+id/goToSignUp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Dont have an account? Creat new one"
+          android:layout_gravity="center"
+          android:layout_marginTop="15sp"
+          android:textStyle="bold"
+          android:textSize="15sp"
+          android:textColor="@color/colorApp"/>
+   </LinearLayout>
+
+
+</LinearLayout>
